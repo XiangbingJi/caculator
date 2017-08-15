@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="background"><!-- Main background -->
+             
+    <div id="result">{{result}}</div>
+    <div id="result">{{operation}}</div>
+         
+     <div id="main">
+        <div id="first-rows">
+            <button (click) = "clear()" class="del-bg" id="delete">Del</button>
+            <button (click) = "append('%')" value="%" class="btn-style operator opera-bg fall-back">%</button>
+            <button (click) = "append('+')" value="+" class="btn-style opera-bg value align operator">+</button>
+        </div>
+             
+        <div class="rows">
+            <button (click) = "append('7')" value="7" class="btn-style num-bg num first-child">7</button>
+            <button (click) = "append('8')" value="8" class="btn-style num-bg num">8</button>
+            <button (click) = "append('9')" value="9" class="btn-style num-bg num">9</button>
+            <button (click) = "append('-')" value="-" class="btn-style opera-bg operator">-</button>
+        </div>
+             
+        <div class="rows">
+            <button (click) = "append('4')" value="4" class="btn-style num-bg num first-child">4</button>
+            <button (click) = "append('5')" value="5" class="btn-style num-bg num">5</button>
+            <button (click) = "append('6')" value="6" class="btn-style num-bg num">6</button>
+            <button (click) = "append('*')" value="*" class="btn-style opera-bg operator">x</button>
+        </div>
+             
+        <div class="rows">
+            <button (click) = "append('1')" value="1" class="btn-style num-bg num first-child">1</button>
+            <button (click) = "append('2')" value="2" class="btn-style num-bg num">2</button>
+            <button (click) = "append('3')" value="3" class="btn-style num-bg num">3</button>
+            <button (click) = "append('/')" value="/" class="btn-style opera-bg operator">/</button>
+        </div>
+             
+        <div class="rows">
+            <button (click) = "append('0')" value="0" class="num-bg zero" id="delete">0</button>
+            <button (click) = "append('.')" value="." class="btn-style num-bg period fall-back">.</button>
+            <button (click) = "evaluate()" value="=" id="eqn-bg" class="eqn align">=</button>
+        </div>
+            
+    </div>
+         
+</div>
